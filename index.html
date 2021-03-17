@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Calculator</title>
+        <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+        <script>
+        window.TrackJS && TrackJS.install({ 
+            token: "fb8d6437a94746f6aa1e1c38ca95fd27"
+            // for more configuration options, see https://docs.trackjs.com
+        });
+        </script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="calculator">
+            <fieldset>
+                <legend>Error Calculator</legend>
+                <input id="num1">
+                <select id="operator">
+                    <option data-operator='add'>+</option>
+                    <option data-operator='sub'>-</option>
+                    <option data-operator='mul'>*</option>
+                    <option data-operator='div'>/</option>
+                </select>
+                <input id="num2">
+                <button id="calculate">Calculate</button>
+                <div id="result"></div>
+            </fieldset>
+        </div>
+        <div id="testing-buttons">
+            <button id="console-log">Console Log Demo</button>
+            <button id="console-error">Console Error Demo</button>
+            <button id="console-table">Console Table Demo</button>
+            <button id="console-dir">Console Dir</button>
+            <button id="console-dirxml">Console Dirxml</button>
+            <button id="console-group-start">Console Group Start</button>
+            <button id="console-group-end">Console Group End</button>
+            <button id="console-time-start">Console Time Start</button>
+            <button id="console-time-end">Console Time End</button>
+            <button id="console-trace">Console Trace</button>
+            <button id="global-error">Trigger a Global Error</button>
+        </div>
+    </body>
+</html>
